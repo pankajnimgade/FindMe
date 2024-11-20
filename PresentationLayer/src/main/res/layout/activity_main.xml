@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="1dp"
-        android:background="@android:color/holo_green_light"
+        android:hint="@string/search_something"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_main_activity" />
@@ -45,7 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:visibility="gone" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_main_activity"
@@ -53,16 +54,20 @@
             android:layout_height="match_parent"
             android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            tools:itemCount="10" />
+            tools:itemCount="2"
+            tools:listitem="@layout/item_layout"
+            tools:visibility="visible" />
 
         <ImageView
             android:id="@+id/image_view_main_activity"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/cardview_dark_background"
-            android:visibility="gone" />
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/error_screen"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            tools:visibility="gone" />
 
     </FrameLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detail_image_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Details" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:foregroundGravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_detail_image_activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_title_detail_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="start"
+                android:textSize="20dp"
+                tools:text="Title ..." />
+
+            <ImageView
+                android:id="@+id/image_view_detail_image_activity"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                tools:background="@drawable/welcome_dog" />
+
+            <TextView
+                android:id="@+id/text_view_date_detail_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="start"
+                android:textSize="16dp"
+                tools:text="Date ..." />
+
+            <TextView
+                android:id="@+id/text_view_description_detail_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="start"
+                android:textSize="16dp"
+                tools:text="Description ..." />
+
+            <TextView
+                android:id="@+id/text_view_autor_detail_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="start"
+                android:textSize="16dp"
+                tools:text="Author ..." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
