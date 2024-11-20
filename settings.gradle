@@ -20,4 +20,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "FindMe"
-include ':app'
+include ':PresentationLayer'
+include ':FrameworkLayer'
+
+include ':BusinessLogic'
